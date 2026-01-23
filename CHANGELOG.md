@@ -4,13 +4,48 @@ All notable changes to the **Markdown Copilot** extension will be documented in 
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+This extension uses an even minor version for Stable releases and an odd minor version for Preview releases.
+
 ## [Unreleased]
 
 ### ToDo
 - [ ] [Image Generation](https://ai-sdk.dev/docs/ai-sdk-core/image-generation) support
 - [ ] [Agents](https://openai.com/index/new-tools-for-building-agents/) support
 
+## [0.14.0] - 2026-01-23
+
+### Notes
+- Stable release (even minor version); includes all changes from the 0.13.x Preview releases.
+
+### Added
+- Add OpenAI Responses API support and surface the OpenAI-provided Web Search tool
+- Add Google Vertex API backend with Gemini 3 Pro support
+- Refresh Copilot markdown snippets with clearer descriptions for options and tools
+
+### Changed
+- Switch backend library from [OpenAI TypeScript and JavaScript API Library](https://github.com/openai/openai-node) to [AI SDK Core](https://ai-sdk.dev/docs/ai-sdk-core)
+- Update dependencies (notably `ai` v6 and `@ai-sdk/*` major version upgrades)
+- Refresh Copilot markdown snippets
+  - Rename the reasoning preset snippet label
+  - Remove the `o3-mini` preset snippet
+  - Adjust the default `copilot-options` snippet template
+
+## [0.13.1] - 2026-01-23
+
+### Notes
+- Preview release (odd minor version).
+
+### Changed
+- Update dependencies (notably `ai` v6 and `@ai-sdk/*` major version upgrades)
+- Refresh Copilot markdown snippets
+  - Rename the reasoning preset snippet label
+  - Remove the `o3-mini` preset snippet
+  - Adjust the default `copilot-options` snippet template
+
 ## [0.13.0] - 2025-12-10
+
+### Notes
+- Preview release (odd minor version).
 
 ### Added
 - Add OpenAI Responses API support and surface the OpenAI-provided Web Search tool
@@ -118,7 +153,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ### Added
 - Add support for pre-release
-  - `major.EVEN_NUMBER.patch` for release versions and `major.ODD_NUMBER.patch` for pre-release versions
+  - `minor.EVEN_NUMBER.patch` for stable releases and `minor.ODD_NUMBER.patch` for preview releases
 - Add support for Web Browser environment
 - Add "Paste as Pretty Text" section to READMEs
 - New OpenAI models can be selected in the Settings
@@ -289,7 +324,9 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Review Markdown notation
 - Publish to marketplace
 
-[Unreleased]: https://github.com/kurusugawa-computer/markdown-copilot-vscode/compare/v0.13.0...HEAD
+[Unreleased]: https://github.com/kurusugawa-computer/markdown-copilot-vscode/compare/v0.14.0...HEAD
+[0.14.0]: https://github.com/kurusugawa-computer/markdown-copilot-vscode/compare/v0.13.1...v0.14.0
+[0.13.1]: https://github.com/kurusugawa-computer/markdown-copilot-vscode/compare/v0.13.0...v0.13.1
 [0.13.0]: https://github.com/kurusugawa-computer/markdown-copilot-vscode/compare/v0.12.2...v0.13.0
 [0.12.2]: https://github.com/kurusugawa-computer/markdown-copilot-vscode/compare/v0.12.1...v0.12.2
 [0.12.1]: https://github.com/kurusugawa-computer/markdown-copilot-vscode/compare/v0.12.0...v0.12.1
