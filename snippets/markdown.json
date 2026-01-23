@@ -3,7 +3,7 @@
 		"prefix": "```json copilot-options",
 		"body": [
 			"```json copilot-options",
-			"{\"model\":\"${1:gpt-4o}\",\"response_format\":{\"type\":\"${2:text}\",\"temperature\":${3:0.01},\"max_tokens\":${4:4096}}}",
+			"{\"model\":\"${1:gpt-4o}\",\"response_format\":{\"type\":\"${2:text}\",\"max_tokens\":${4:4096}}}",
 			"```",
 			"$0"
 		],
@@ -19,7 +19,7 @@
 		],
 		"description": "Disable OpenAI response storage with providerOptions.openai.store"
 	},
-	"copilot-options (reasoning)": {
+	"copilot-options (reasoning effort)": {
 		"prefix": "```json copilot-options",
 		"body": [
 			"```json copilot-options",
@@ -28,16 +28,6 @@
 			"$0"
 		],
 		"description": "Enable OpenAI Responses reasoning (high effort with summaries)"
-	},
-	"copilot-options (o3-mini)": {
-		"prefix": "```json copilot-options",
-		"body": [
-			"```json copilot-options",
-			"{\"model\":\"${1:o3-mini}\",\"temperature\":1}",
-			"```",
-			"$0"
-		],
-		"description": "Switch to the o3-mini model with a higher temperature"
 	},
 	"copilot-tool-parameters": {
 		"prefix": "```json copilot-tool-parameters",
